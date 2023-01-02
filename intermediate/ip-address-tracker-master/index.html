@@ -1,34 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <title>Frontend Mentor | IP Address Tracker</title>
+  <!-- Rubik font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <!-- leafltejs css -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+    integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
 </head>
+
 <body>
 
-  IP Address Tracker
+  <section id="top">
+    <h1>IP Address Tracker</h1>
+    <form action="" id="form">
+      <input type="text" id="searchInput" placeholder="Search for any IP address or domain" required>
+      <button type="submit" class="btn-submit">
+        <img src="images/icon-arrow.svg" alt="">
+      </button>
+      <p class="not-found d-none">Not found. Please search again with another input.</p>
+    </form>
+    <div id="ip-details">
+      <div class="details">
+        <h6>IP Address</h6>
+        <p class="ip-address"></p>
+      </div>
 
-  Search for any IP address or domain
+      <div class="details">
+        <h6>Location</h6>
+        <p class="location"></p>
+      </div>
 
-  IP Address
-  Location
-  Timezone
-    UTC <!-- add offset value dynamically using the API -->
-  ISP
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+      <div class="details">
+        <h6>Timezone</h6>
+        <p class="timezone">
+          <!-- UTC  -->
+          <!-- add offset value dynamically using the API -->
+        </p>
+      </div>
+
+      <div class="details">
+        <h6>ISP</h6>
+        <p class="isp"></p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Leaflet js -->
+  <div id="map"></div>
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io/challenges/ip-address-tracker-I8-0yYAH0"
+      target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://www.frontendmentor.io/profile/simpleanilcha" target="_blank">Anil Maharjan</a>.
+  </div> -->
+
+  <!-- Make sure you put this AFTER Leaflet's CSS -->
+  <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+    integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+
+  <script src="./scripts/main.js" type="module"></script>
+
 </body>
+
 </html>

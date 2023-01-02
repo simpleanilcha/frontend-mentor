@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Rubik', sans-serif;
+  font-size: 1.125rem;  /* i.e. 18px */
+  box-sizing: border-box;
+}
+
+#top {
+  background: url(../images/pattern-bg.png) no-repeat left top;
+  background-size: cover;
+  height: 280px;
+  padding: 2rem;
+  text-align: center;
+  position: relative;
+}
+
+h1 {
+  color: #fff;
+  font-size: 32px;
+  margin-bottom: 2rem;
+}
+
+#searchInput {
+  padding: 1rem;
+  width: 30%;
+  border-radius: 1rem 0 0 1rem;
+  outline: none;
+  border: none;
+}
+
+.btn-submit {
+  background-color: #000;
+  height: 58px;
+  width: 48px;
+  outline: none;
+  border: none;
+  border-radius: 0 1rem 1rem 0;
+  margin-left: -5px;
+  cursor: pointer;
+}
+
+.btn-submit:hover, .btn-submit:focus {
+  background: #333;
+}
+
+.not-found {
+  color: rgb(250 105 105);
+  font-size: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+.d-none {
+  display: none;
+}
+
+#ip-details {
+  background: #fff;
+  border-radius: 0.75rem;
+  width: 75%;
+  padding: 1.5rem 0 1.5rem;
+  display: flex;
+  margin: 0 auto;
+  position: relative;
+  bottom: -4rem;
+  z-index: 999;
+}
+
+.details {
+  width: 33.33%;
+  padding: 1rem;
+  text-align: left;
+  border-right: 1px solid #ddd;
+}
+
+.details p {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+h6 {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #999;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+#map {
+  /* height: 180px; */
+  height: calc(100vh - 302px)
+}
