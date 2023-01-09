@@ -19,7 +19,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/ip-address-tracker-iIVmut5U7t](https://www.frontendmentor.io/solutions/ip-address-tracker-iIVmut5U7t)
 - Live Site URL: [https://fm-ipaddress-tracker.netlify.app](https://fm-ipaddress-tracker.netlify.app)
 
 ## My process
