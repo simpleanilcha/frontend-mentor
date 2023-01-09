@@ -15,12 +15,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./src/images/my-desktop-preview.png)
+![](./images/my-desktop-preview.png)
 
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://fm-ipaddress-tracker.netlify.app](https://fm-ipaddress-tracker.netlify.app)
 
 ## My process
 
