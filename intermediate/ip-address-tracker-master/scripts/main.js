@@ -11,10 +11,11 @@ let mapLat = ''
 let mapLng = ''
 
 // map
-let map = L.map('map');
+let map = L.map('map', { zoomControl: false, attributionControl: false });
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
   maxZoom: 19,
-  attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+  zoomControl: false,
+  // attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
 
 async function getIPDetails(event) {

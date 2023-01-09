@@ -17,13 +17,13 @@
 
 h1 {
   color: #fff;
-  font-size: 32px;
-  margin-bottom: 2rem;
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
 }
 
 #searchInput {
   padding: 1rem;
-  width: 30%;
+  width: 80%; /* 30%; */
   border-radius: 1rem 0 0 1rem;
   outline: none;
   border: none;
@@ -32,7 +32,7 @@ h1 {
 .btn-submit {
   background-color: #000;
   height: 58px;
-  width: 48px;
+  width: 50px;
   outline: none;
   border: none;
   border-radius: 0 1rem 1rem 0;
@@ -57,25 +57,27 @@ h1 {
 #ip-details {
   background: #fff;
   border-radius: 0.75rem;
-  width: 75%;
-  padding: 1.5rem 0 1.5rem;
+  width: 100%; /* 75%; */
+  padding: 0.75rem 0 0.75rem; /* 1.5rem 0 1.5rem */
   display: flex;
+  flex-direction: column;
   margin: 0 auto;
   position: relative;
-  bottom: -4rem;
+  bottom: -2rem;
   z-index: 999;
 }
 
 .details {
-  width: 33.33%;
+  /* width: 33.33%; */
   padding: 1rem;
-  text-align: left;
-  border-right: 1px solid #ddd;
+  text-align: center;
+  /* border-right: 1px solid #ddd; */
 }
 
 .details p {
   font-size: 1.25rem;
   font-weight: 500;
+  color: #333;
 }
 
 h6 {
@@ -98,5 +100,39 @@ h6 {
 
 #map {
   /* height: 180px; */
-  height: calc(100vh - 302px)
+  /* height: calc(100vh - 302px) */
+  height: calc(100vh - 50px)
+}
+
+@media screen and (min-width: 960px) {
+  h1 {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+
+  #ip-details {
+    flex-direction: row;
+    max-width: 960px;
+    padding: 0.75rem;
+  }
+
+  .details {
+    width: 33.33%;
+    text-align: left;
+    border-right: 1px solid #ddd;
+  }
+
+  .details:last-of-type {
+    border-right: 0;
+  }
+
+  #searchInput {
+    padding: 1rem 1.25rem;
+    width: 50%;
+    max-width: 450px;
+  }
+
+  #map {
+    height: calc(100vh - 280px)
+  }
 }
